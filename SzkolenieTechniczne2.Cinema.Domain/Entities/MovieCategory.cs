@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using SzkolenieTechniczne2.Cinema.Common.Entities;
+using SzkolenieTechniczne2.Cinema.Domain.Entities;
 
 namespace SzkolenieTechniczne2.Cinema.Domain
 {
