@@ -11,6 +11,7 @@ namespace SzkolenieTechniczne2.Cinema.Domain.Repositories
     internal interface IMovieRepository
     {
         Task<Movie> GetByIdAsync(long id);
+        
         Task<IEnumerable<Movie>> GetAllAsync();
 
         Task<IEnumerable<MovieCategory>> GetAllCategoriesAsync();
@@ -20,7 +21,9 @@ namespace SzkolenieTechniczne2.Cinema.Domain.Repositories
         Task<bool> IsSeanceExistAsync(DateTime seanceDate);
 
         Task AddAsync(Movie movie);
+        
         Task UpdateAsync(Movie movie);
+        
         Task<Movie> GetSeanceDetailsAsync(long id);
 
         Task<List<Seance>> GetSeancesByMovieIdAsync(long movieId);
