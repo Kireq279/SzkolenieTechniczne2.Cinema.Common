@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Command\Movie\Create\" />
+    <Folder Include="Command\Movie\Delete\" />
+    <Folder Include="Command\Movie\Update\" />
+    <Folder Include="Command\Seances\Register\" />
+    <Folder Include="Command\Tickets\BuyTicket\" />
+    <Folder Include="query\Movie\GetMovieCategories\" />
+    <Folder Include="query\Movie\GetMovieQuery\" />
+    <Folder Include="Seances\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\szk2.Cinema.Common\SzkolenieTechniczne2.Cinema.Common.csproj" />
+  </ItemGroup>
+
+</Project>

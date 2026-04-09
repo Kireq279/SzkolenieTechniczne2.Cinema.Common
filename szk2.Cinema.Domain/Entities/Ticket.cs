@@ -1,7 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations; 
 using System.ComponentModel.DataAnnotations.Schema; 
-using SzkolenieTechniczne2.Cinema.Common.Entities; 
+using SzkolenieTechniczne2.Cinema.Common.Entities;
+using SzkolenieTechniczne2.Cinema.Domain.Entities;
 
 namespace SzkolenieTechniczne2.Cinema.Domain
 {
@@ -30,6 +31,6 @@ namespace SzkolenieTechniczne2.Cinema.Domain
         public long SeanceId { get; protected set; }
 
         // Navigation Property
-        public virtual SzkolenieTechniczne2.Cinema.Domain.Entities.Seance Seance { get; protected set; }
+        public virtual Seance Seance { get; protected set; }
     }
 }
